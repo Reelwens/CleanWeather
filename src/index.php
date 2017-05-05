@@ -1,8 +1,23 @@
 <?php
 session_start();
-// Include php files
-include 'includes/config.php';
+
+// Include php handler
 include 'includes/handler.php';
+
+// Go home if they are no request
+$q = isset($_GET['q']) ? $_GET['q'] : 'home';
+
+
+// Include the asked page
+if (file_exists('views/'.$q.'.php')){
+    $include = 'views/'.$q.'.php';
+}
+
+// If they are no files => 404
+else {
+    $include = 'views/404.php';
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -36,9 +51,10 @@ include 'includes/handler.php';
     <link href="css/app.min.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-
-<!-- Scripts -->
-<script src="js/script.js" charset="utf-8"></script>
-
+    
+    <?php
+        include $include;
+    ?>
+    
 </body>
 </html>

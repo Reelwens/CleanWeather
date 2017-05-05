@@ -37,6 +37,7 @@ gulp.task('connect', function() {
 });
 
 
+
 // PHP
 gulp.task('php', () => {
     return gulp.src( [
@@ -44,6 +45,7 @@ gulp.task('php', () => {
         ] )
         .pipe(gulp.dest('./dist/'));
 })
+
 
 
 // Images
@@ -54,6 +56,7 @@ gulp.task('img', () => {
         .pipe(imagemin())
         .pipe(gulp.dest('./dist/img/'));
 })
+
 
 
 // Sass
@@ -70,6 +73,17 @@ gulp.task( 'sass', function()
         }))
         .pipe(gulp.dest('./dist/css'))
 } );
+
+
+
+// htaccess
+gulp.task('htaccess', () => {
+    return gulp.src( [
+        './src/.htaccess'
+        ] )
+        .pipe(gulp.dest('./dist/'));
+})
+
 
 
 // JS task
@@ -90,8 +104,9 @@ gulp.task( 'watch', function()
     gulp.watch( './src/js/**/**', [ 'js' ] );
     gulp.watch( './src/**/*.php', [ 'php' ] );
     gulp.watch( './src/img/**/**', [ 'img' ] );
+    gulp.watch( './src/.htaccess', [ 'htaccess' ] );
 } );
 
 
 
-gulp.task( 'default', [ 'php', 'sass', 'js', 'img', 'watch' ] );
+gulp.task( 'default', [ 'php', 'sass', 'js', 'img', 'htaccess', 'watch' ] );
