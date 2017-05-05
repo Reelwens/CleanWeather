@@ -1,0 +1,97 @@
+body {
+    background-color: #4a97d2;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    user-select: none;
+}
+
+
+
+
+
+// Sun
+
+#parallax {
+    top: -300px;
+    left: -150px;
+    
+    img {
+        width: 1200px;
+    }
+}
+
+.sun_8 img {
+  animation: fullRotate linear 40s;
+  animation-iteration-count: infinite;
+  transform-origin: 37.7% 34.9%;
+}
+
+.sun_7 img {
+  animation: fullRotate linear 38s;
+  animation-iteration-count: infinite;
+  transform-origin: 37.7% 34.9%;
+}
+
+.sun_6 img {
+  animation: fullRotate linear 36s;
+  animation-iteration-count: infinite;
+  transform-origin: 37.7% 34.9%;
+}
+
+.sun_5 img {
+  animation: fullRotate linear 34s;
+  animation-iteration-count: infinite;
+  transform-origin: 37.7% 34.9%;
+}
+
+.sun_4 img {
+  animation: fullRotate linear 33s;
+  animation-iteration-count: infinite;
+  transform-origin: 37.7% 34.9%;
+}
+
+.sun_3 img {
+  animation: fullRotate linear 31s;
+  animation-iteration-count: infinite;
+  transform-origin: 37.7% 34.9%;
+}
+
+.sun_2 img {
+  animation: fullRotate linear 29s;
+  animation-iteration-count: infinite;
+  transform-origin: 37.7% 34.9%;
+}
+
+.sun_1 img {
+  animation: fullRotate linear 27s;
+  animation-iteration-count: infinite;
+  transform-origin: 37.7% 34.9%;
+}
+
+.sun_9 img {
+  animation: fullRotate linear 30s;
+  animation-iteration-count: infinite;
+  transform-origin: 61.9% 72.3%;
+}
+
+.sun_10 img {
+  animation: fullRotate linear 21s;
+  animation-iteration-count: infinite;
+  transform-origin: 68.6% 82.8%;
+}
+
+.sun_11 img {
+  animation: fullRotate linear 15s;
+  animation-iteration-count: infinite;
+  transform-origin: 75.3% 93.8%;
+}
+
+@keyframes fullRotate{
+  0% {
+    transform:  rotate(0deg) ;
+  }
+  100% {
+    transform:  rotate(360deg) ;
+  }
+}
