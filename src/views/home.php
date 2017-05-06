@@ -1,4 +1,4 @@
-<body class="sun">
+<body class="sun animsition">
     <?php include 'sun.php'; ?>
     
     <div class="container dayInformation">
@@ -7,9 +7,7 @@
                 <p class="temperature">21°C</p>
                 <p class="resume">Ensoleillé</p>
                 <p class="minMax"><span class="min">18°C</span><span class="max">25°C</span></p>
-                <a href="details.php">
-                    <button type="button" class="btn btn-info btn-lg">Détails ></button>
-                </a>
+                <button type="button" class="btn btn-info btn-lg animsition-link" href="details.php">Détails ></button>
             </div>
         </div>
     </div>
