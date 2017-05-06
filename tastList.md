@@ -2,7 +2,7 @@
 - [x] Météo soleil parallax animé
 - [ ] Météo nuageux parallax animé
 - [ ] Météo pluie parallax animé
-- [ ] Contenu générique de l'index avec bootstrap
+- [x] Contenu générique de l'index avec bootstrap
 - [ ] Bouton pour voir page détails et animation
 - [ ] Contenu de la page détail avec framework
 - [ ] Responsive parfait

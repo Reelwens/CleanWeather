@@ -1,0 +1,27 @@
+.dayInformation {
+    margin-top: 60px;
+    
+    .temperature {
+        font-size: 100px;
+        font-weight: 600;
+        letter-spacing: 0.07em;
+        height: 110px;
+    }
+    
+    .resume {
+        font-size: 30px;
+        margin-right: 10px;
+    }
+    
+    .minMax {
+        margin-bottom: 100px;
+        
+        span {
+            margin: 0 5px;
+            
+            &.min {
+                color: #bfdde8;
+            }
+        }
+    }
+}
