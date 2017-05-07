@@ -79,7 +79,7 @@ gulp.task( 'sass', function()
 // htaccess
 gulp.task('htaccess', () => {
     return gulp.src( [
-        './src/.htaccess'
+        './src/**/.htaccess'
         ] )
         .pipe(gulp.dest('./dist/'));
 })

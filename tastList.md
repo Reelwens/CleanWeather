@@ -9,8 +9,8 @@
 
 ## Back
 - [x] Rooting
+- [x] Mise en cache appel API
 - [ ] Appel API selon localisation
-- [ ] Mise en cache
 - [ ] Changement des valeurs numériques
 - [ ] Changement des images de la météo
 - [ ] Changement des valeurs/graphiques de la page détail
