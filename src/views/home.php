@@ -4,9 +4,10 @@
     <div class="container dayInformation">
         <div class="row">
             <div class="col-md-offset-6 col-md-6 text-right">
-                <p class="temperature">21°C</p>
-                <p class="resume">Ensoleillé</p>
-                <p class="minMax"><span class="min">18°C</span><span class="max">25°C</span></p>
+                <p class="city"><?= $forecast->name ?> :</p>
+                <p class="temperature"><?= $forecast->main->temp ?><span>°C</span></p>
+                <p class="resume"><?= ucfirst($forecast->weather[0]->description) ?></p>
+                <p class="minMax"><span class="min"><?= $forecast->main->temp_min ?>°C</span><span class="max"><?= $forecast->main->temp_max ?>°C</span></p>
                 <button type="button" class="btn btn-info btn-lg animsition-link" href="details.php">Détails ></button>
             </div>
         </div>

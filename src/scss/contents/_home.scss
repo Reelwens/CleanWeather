@@ -1,11 +1,20 @@
 .dayInformation {
     margin-top: 60px;
     
+    .city {
+        font-size: 50px;
+    }
+    
     .temperature {
         font-size: 100px;
         font-weight: 600;
         letter-spacing: 0.07em;
         height: 110px;
+        
+        span {
+            font-size: 40px;
+            letter-spacing: 0.02em;
+        }
     }
     
     .resume {

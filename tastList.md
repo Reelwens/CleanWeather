@@ -11,7 +11,7 @@
 - [x] Rooting
 - [x] Mise en cache appel API
 - [ ] Appel API selon localisation
-- [ ] Changement des valeurs numériques
+- [x] Changement des valeurs numériques
 - [ ] Changement des images de la météo
 - [ ] Changement des valeurs/graphiques de la page détail
 - [ ] Recherche d'une autre ville conservée en POST avec autocompletion

@@ -21,6 +21,9 @@ else {
 }
 
 
+
+
+
 /*
  * Make the request
  */
@@ -34,11 +37,21 @@ if(file_exists($path)) {
     $forecast = file_get_contents($path);
 }
 
-// Depuis l'API
+// From API
 else {
     $forecast = file_get_contents($url);
-    file_put_contents($path, $forecast); // On créé le fichier dans le cache
+    file_put_contents($path, $forecast); // Create file in cache
 }
 
-// On converti en objet
+// Convert in object
 $forecast = json_decode($forecast);
+
+
+
+
+
+/*
+ * Create parallax
+ */
+
+$parallax = strtolower($forecast->weather[0]->main);
