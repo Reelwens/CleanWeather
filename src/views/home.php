@@ -4,7 +4,14 @@
     <div class="container dayInformation">
         <div class="row">
             <div class="col-md-offset-6 col-md-6 text-right">
-                <p class="city"><?= $forecast->name ?> :</p>
+                <div class="city">
+                    <form action="#" method="get">
+                        <input type="hidden" name="type" value="search">
+                        <label for="city"><img src="img/search.svg" alt="Rechercher" width="28"></label>
+                        <span contenteditable="true" name="city" id="city"><?= $forecast->name ?></span>
+                        <span> :</span>
+                    </form>
+                </div>
                 <p class="temperature"><?= $forecast->main->temp ?><span>°C</span></p>
                 <p class="resume"><?= ucfirst($forecast->weather[0]->description) ?></p>
                 <p class="minMax"><span class="min"><?= $forecast->main->temp_min ?>°C</span><span class="max"><?= $forecast->main->temp_max ?>°C</span></p>

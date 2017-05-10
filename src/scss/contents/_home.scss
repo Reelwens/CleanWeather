@@ -3,6 +3,12 @@
     
     .city {
         font-size: 50px;
+        
+        img {
+            margin-right: 16px;
+            margin-bottom: 6px;
+            cursor: pointer;
+        }
     }
     
     .temperature {
@@ -10,6 +16,7 @@
         font-weight: 600;
         letter-spacing: 0.07em;
         height: 110px;
+        cursor: default;
         
         span {
             font-size: 40px;
@@ -20,10 +27,12 @@
     .resume {
         font-size: 30px;
         margin-right: 10px;
+        cursor: default;
     }
     
     .minMax {
         margin-bottom: 100px;
+        cursor: default;
         
         span {
             margin: 0 5px;
