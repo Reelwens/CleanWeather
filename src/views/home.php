@@ -1,5 +1,5 @@
 <body class="sun animsition">
-    <?php include 'sun.php'; ?>
+    <?php include 'cloud.php'; ?>
     
     <div class="container dayInformation">
         <div class="row">

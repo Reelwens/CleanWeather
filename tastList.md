@@ -1,6 +1,6 @@
 ## Front
 - [x] Météo soleil parallax animé
-- [ ] Météo nuageux parallax animé
+- [x] Météo nuageux parallax animé
 - [ ] Météo pluie parallax animé
 - [x] Contenu générique de l'index avec bootstrap
 - [x] Bouton pour voir page détails et animation
