@@ -4,24 +4,37 @@
  * Find the city
  */
 
+// Get ip (need it in local)
+$ip = file_get_contents('https://api.ipify.org');
+
+// Localisation of the ip
+$json  = file_get_contents("https://freegeoip.net/json/$ip");
+$json  =  json_decode($json ,true);
+$country =  $json['country_name'];
+$region= $json['region_name'];
+$city = $json['city'];
+
+
 // If the user search a city
 if (!empty($_GET['city'])) {
     $location = ('q='.$_GET['city']);
 }
-// If the user search nothing
-else {
-    // If the user have activate his localization
-    if((!empty($lat)) and (!empty($lon))) {
-        $location = 'lat='.$lat.'&lon='.$lon;
-    }
-    // Callback
-    else {
-        $location = ('q=Paris');
-    }
+// Use city
+else if(!empty($city)){
+    $location = 'q='.$city;
 }
-
-
-
+// Else use region
+else if(!empty($region)){
+    $location = 'q='.$region;
+}
+// Else use country
+else if(!empty($country)){
+    $location = 'q='.$country;
+}
+// Callback
+else {
+    $location = ('q=Paris');
+}
 
 
 /*

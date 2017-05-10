@@ -10,7 +10,7 @@
 ## Back
 - [x] Rooting
 - [x] Mise en cache appel API
-- [ ] Appel API selon localisation
+- [x] Appel API selon localisation
 - [x] Changement des valeurs numériques
 - [ ] Changement des images de la météo
 - [ ] Changement des valeurs/graphiques de la page détail
