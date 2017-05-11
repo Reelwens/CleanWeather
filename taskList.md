@@ -14,5 +14,5 @@
 - [x] Changement des valeurs numériques
 - [x] Changement des images de la météo
 - [x] Recherche d'une autre ville
-- [ ] Conservation ville en cookie
+- [x] Conservation ville en cookie
 - [ ] Changement des valeurs/graphiques de la page détail
