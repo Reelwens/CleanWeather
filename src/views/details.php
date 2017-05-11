@@ -1,4 +1,9 @@
-<body class="animsition"
+<?php
+// Include php handler details
+include 'includes/handler_details.php';
+?>
+
+     <body class="animsition"
       data-animsition-in-class="fade-in-right"
       data-animsition-in-duration="1000"
       data-animsition-out-class="fade-out-right"
@@ -16,28 +21,14 @@
                     <button type="button" class="btn btn-info btn-lg animsition-link" href="index.php">< Accueil</button>
                 </div>
             </div>
-            
             <div class="row fourDays">
+                <?php for($i=8; $i<=32; $i=$i+8 ) { ?>
                 <div class="col-md-3 text-center dayBox">
-                    <p class="day">12/05</p>
+                    <p class="day"><?= (substr($forecast->list[$i]->dt_txt, 5, 5)) ?></p>
                     <img src="#" alt="Image">
-                    <p class="temp">12°</p>
+                    <p class="temp"><?= $forecast->list[$i]->main->temp ?>°</p>
                 </div>
-                <div class="col-md-3 text-center dayBox">
-                    <p class="day">12/05</p>
-                    <img src="#" alt="Image">
-                    <p class="temp">12°</p>
-                </div>
-                <div class="col-md-3 text-center dayBox">
-                    <p class="day">12/05</p>
-                    <img src="#" alt="Image">
-                    <p class="temp">12°</p>
-                </div>
-                <div class="col-md-3 text-center dayBox">
-                    <p class="day">12/05</p>
-                    <img src="#" alt="Image">
-                    <p class="temp">12°</p>
-                </div>
+                <?php } ?>
             </div>
         </div>
     </div>

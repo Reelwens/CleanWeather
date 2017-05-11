@@ -28,7 +28,7 @@ include 'includes/handler.php';
                 </div>
                 
                 
-                <button type="button" class="btn btn-info btn-lg animsition-link" href="details.php">7 Days ></button>
+                <button type="button" class="btn btn-info btn-lg animsition-link" href="details.php<?= !empty($_GET['city']) ? '?city='.$_GET['city'] : '' ?>">4 Days ></button>
             </div>
         </div>
     </div>
