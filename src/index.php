@@ -1,8 +1,4 @@
 <?php
-session_start();
-
-// Include php handler
-include 'includes/handler.php';
 
 // Go home if they are no request
 $q = isset($_GET['q']) ? $_GET['q'] : 'home';

@@ -4,7 +4,7 @@
 - [x] Météo pluie parallax animé
 - [x] Contenu générique de l'index avec bootstrap
 - [x] Bouton pour voir page détails et animation
-- [ ] Contenu de la page détail avec framework
+- [x] Contenu de la page détail
 - [ ] Responsive parfait
 
 ## Back

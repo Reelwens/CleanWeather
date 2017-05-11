@@ -11,6 +11,7 @@ body.rain {
     left: -100px;
     position: absolute;
     z-index: -1;
+    overflow: hidden;
     
     img {
         width: 1300px;
