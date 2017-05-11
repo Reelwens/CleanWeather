@@ -14,21 +14,29 @@ $country =  $json['country_name'];
 $region= $json['region_name'];
 $city = $json['city'];
 
+
 // If the user search a city
 if (!empty($_GET['city'])) {
     $location = ('q='.$_GET['city']);
 }
+// If they are a location cookie
+else if(!empty($_COOKIE['location'])) {
+    $location = $_COOKIE['location'];
+}
 // Use city
 else if(!empty($city)){
     $location = 'q='.$city;
+    setcookie('location', $location, time() + 60 * 60 * 24, '/');
 }
 // Else use region
 else if(!empty($region)){
     $location = 'q='.$region;
+    setcookie('location', $location, time() + 60 * 60 * 24, '/');
 }
 // Else use country
 else if(!empty($country)){
     $location = 'q='.$country;
+    setcookie('location', $location, time() + 60 * 60 * 24, '/');
 }
 // Callback
 else {
