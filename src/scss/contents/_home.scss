@@ -48,7 +48,10 @@
 @font-face {
 	font-family: 'icomoon';
 	src:url('../img/icomoon.eot');
-	src:url('../img/icomoon.eot?#iefix') format('embedded-opentype');
+	src:url('../img/icomoon.eot?#iefix') format('embedded-opentype'),
+        url('../img/icomoon.woff') format('woff'),
+		url('../img/icomoon.ttf') format('truetype'),
+		url('../img/icomoon.svg#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
