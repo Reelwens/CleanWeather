@@ -4,7 +4,7 @@
       data-animsition-out-class="fade-out-right"
       data-animsition-out-duration="800">
     <p>Détails</p>
-    <button type="button" class="btn btn-info btn-lg animsition-link" href="home.php">< Accueil</button>
+    <button type="button" class="btn btn-info btn-lg animsition-link" href="index.php">< Accueil</button>
 </body>
 
 

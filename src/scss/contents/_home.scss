@@ -1,14 +1,10 @@
 .dayInformation {
-    margin-top: 60px;
+    margin-top: 50px;
+    cursor: default;
     
     .city {
         font-size: 50px;
-        
-        img {
-            margin-right: 16px;
-            margin-bottom: 6px;
-            cursor: pointer;
-        }
+        margin-right: 10px;
     }
     
     .temperature {
@@ -16,23 +12,15 @@
         font-weight: 600;
         letter-spacing: 0.07em;
         height: 110px;
-        cursor: default;
-        
-        span {
-            font-size: 40px;
-            letter-spacing: 0.02em;
-        }
     }
     
     .resume {
         font-size: 30px;
         margin-right: 10px;
-        cursor: default;
     }
     
     .minMax {
         margin-bottom: 100px;
-        cursor: default;
         
         span {
             margin: 0 5px;
@@ -42,4 +30,134 @@
             }
         }
     }
+    
+    button {
+        background-color: #327db5;
+        border-radius: 0;
+        border: none;
+        height: 60px;
+        
+        &:hover {
+            background-color: #2672aa;
+        }
+    }
+}
+
+// Search box
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../img/icomoon.eot');
+	src:url('../img/icomoon.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.sb-search {
+	position: relative;
+	width: 0%;
+	min-width: 60px;
+	height: 60px;
+	float: right;
+	overflow: hidden;
+	-webkit-transition: width 0.3s;
+	-moz-transition: width 0.3s;
+	transition: width 0.3s;
+	-webkit-backface-visibility: hidden;
+    margin-bottom: 30px;
+}
+
+.sb-search-input {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: none;
+	outline: none;
+	background: #fff;
+	width: 100%;
+	height: 60px;
+	margin: 0;
+	z-index: 10;
+	padding: 20px 65px 20px 20px;
+	font-family: inherit;
+	font-size: 20px;
+	color: #2c3e50;
+}
+
+.sb-search-input::-webkit-input-placeholder {
+	color: #7aadd4;
+}
+
+.sb-search-input:-moz-placeholder {
+	color: #7aadd4;
+}
+
+.sb-search-input::-moz-placeholder {
+	color: #7aadd4;
+}
+
+.sb-search-input:-ms-input-placeholder {
+	color: #7aadd4;
+}
+
+.sb-icon-search,
+.sb-search-submit  {
+	width: 60px;
+	height: 60px;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 0;
+	margin: 0;
+	line-height: 60px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.sb-search-submit {
+	background: #fff; /* IE needs this */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
+    filter: alpha(opacity=0); /* IE 5-7 */
+    opacity: 0;
+	color: transparent;
+	border: none;
+	outline: none;
+	z-index: -1;
+}
+
+.sb-icon-search {
+	color: #fff;
+	background: #327db5;
+	z-index: 90;
+	font-size: 22px;
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+.sb-icon-search:before {
+	content: "\e000";
+}
+
+/* Open state */
+.sb-search.sb-search-open,
+.no-js .sb-search {
+	width: 100%;
+}
+
+.sb-search.sb-search-open .sb-icon-search,
+.no-js .sb-search .sb-icon-search {
+	background: #2672aa;
+	color: #fff;
+	z-index: 11;
+}
+
+.sb-search.sb-search-open .sb-search-submit,
+.no-js .sb-search .sb-search-submit {
+	z-index: 90;
 }

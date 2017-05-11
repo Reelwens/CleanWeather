@@ -14,7 +14,6 @@ $country =  $json['country_name'];
 $region= $json['region_name'];
 $city = $json['city'];
 
-//echo $_GET['city'];
 // If the user search a city
 if (!empty($_GET['city'])) {
     $location = ('q='.$_GET['city']);
@@ -58,8 +57,6 @@ else {
 
 // Convert in object
 $forecast = json_decode($forecast);
-
-
 
 
 
