@@ -1,7 +1,7 @@
 ## Front
 - [x] Météo soleil parallax animé
 - [x] Météo nuageux parallax animé
-- [ ] Météo pluie parallax animé
+- [x] Météo pluie parallax animé
 - [x] Contenu générique de l'index avec bootstrap
 - [x] Bouton pour voir page détails et animation
 - [ ] Contenu de la page détail avec framework
@@ -12,7 +12,6 @@
 - [x] Mise en cache appel API
 - [x] Appel API selon localisation
 - [x] Changement des valeurs numériques
-- [ ] Changement des images de la météo
+- [x] Changement des images de la météo
 - [ ] Changement des valeurs/graphiques de la page détail
 - [ ] Recherche d'une autre ville conservée en POST avec autocompletion
-- [ ] (optionnel) Villes les plus recherchées avec BDD
