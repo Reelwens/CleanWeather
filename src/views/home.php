@@ -1,5 +1,5 @@
-<body class="sun animsition">
-    <?php include 'cloud.php'; ?>
+<body class="<?= $current_weather ?> animsition">
+    <?php include $current_weather.'.php'; ?>
     
     <div class="container dayInformation">
         <div class="row">

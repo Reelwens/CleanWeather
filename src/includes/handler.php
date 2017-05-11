@@ -14,7 +14,7 @@ $country =  $json['country_name'];
 $region= $json['region_name'];
 $city = $json['city'];
 
-
+//echo $_GET['city'];
 // If the user search a city
 if (!empty($_GET['city'])) {
     $location = ('q='.$_GET['city']);
@@ -64,7 +64,17 @@ $forecast = json_decode($forecast);
 
 
 /*
- * Create parallax
+ * Use weather condition in code
  */
 
-$parallax = strtolower($forecast->weather[0]->main);
+$weather_id = $forecast->weather[0]->id;
+
+if ($weather_id == 800) {
+    $current_weather = 'sun';
+}
+else if ((substr($weather_id, 0, 1) == 7) || (substr($weather_id, 0, 2) == 80)) {
+    $current_weather = 'cloud';
+}
+else {
+    $current_weather = 'rain';
+}
