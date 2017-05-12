@@ -1,8 +1,3 @@
-<?php
-// Include php handler details
-include 'includes/handler_details.php';
-?>
-
      <body class="animsition"
       data-animsition-in-class="fade-in-right"
       data-animsition-in-duration="1000"

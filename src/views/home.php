@@ -1,8 +1,3 @@
-<?php
-// Include php handler
-include 'includes/handler.php';
-?>
-
 <body class="<?= $current_weather ?> animsition">
     <?php include $current_weather.'.php'; ?>
     

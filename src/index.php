@@ -2,11 +2,13 @@
 
 // Go home if they are no request
 $q = isset($_GET['q']) ? $_GET['q'] : 'home';
+include 'includes/handler.php';
 
 
 // Include the asked page
 if (file_exists('views/'.$q.'.php')){
     $include = 'views/'.$q.'.php';
+    include 'includes/handler_'.$q.'.php';
 }
 
 // If they are no files => 404
