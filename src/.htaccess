@@ -3,7 +3,7 @@ Options -Indexes
 RewriteEngine on
 RewriteBase /github/cleanweather/dist/
 
-ErrorDocument 404 /github/cleanweather/dist/index.php?q=404
+ErrorDocument 404 /github/cleanweather/dist/index.php?q=
 
  
 RewriteCond %{SCRIPT_FILENAME} !-d

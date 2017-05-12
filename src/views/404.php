@@ -1,1 +1,3 @@
-<p>404</p>
+<body class="error">
+    <p>404</p>
+</body>
