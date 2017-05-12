@@ -1,9 +1,11 @@
 body.sun, body.cloud {
     background-color: #4a97d2;
+    overflow: hidden;
 }
 
 body.rain {
     background-color: #236187;
+    overflow: hidden;
 }
 
 #parallax {
@@ -12,6 +14,7 @@ body.rain {
     position: absolute;
     z-index: -1;
     overflow: hidden;
+    height: calc(100vh + 600px);
     
     img {
         width: 1300px;
