@@ -9,6 +9,7 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <h1>Météo sur 4 jours</h1>
+                <h2>Ville : <?= $forecast->city->name ?></h2>
             </div>
             
             <div class="row">
