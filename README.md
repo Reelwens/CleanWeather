@@ -26,15 +26,13 @@ Prenez connaissance de la météo partout dans le monde au sein d'une expérienc
 
 ## Fonctionnalités
 
-- Affichage de la météo en parallax animé à partir de SVGs
-- Modification graphique complète selon la météo (soleil, nuageux, pluvieux)
-- Affichage des informations météorologiques de l'instant (Ville, température, description climatique, température min/max)
+- Parallax animé des conditions météorologiques du lieu recherché (soleil, nuage, pluie)
+- Informations météorologiques détaillées du moment présent au lieu recherché
 - Localisation de l'utilisateur via son ip
-- Sauvegarde de sa localisation dans un cookie pendant 24 heures pour limiter les requêtes
-- Stockage en cache des informations de l'API météo pour une heure
-- Recherche d'une ville différente de sa localisation
 - Plusieurs fallback si la localisation précise n'est pas trouvée
-- Affichage de la météo sur 4 jours avec logos appropriés
+- Sauvegarde de sa localisation dans un cookie temporaire
+- Stockage en cache des données de l'API météo
+- Option de recherche d'une ville différente de sa localisation
+- Affichage de la météo sur 4 jours sur une seconde page
 - Routing
-- Animation au changement de page
 - Responsive
