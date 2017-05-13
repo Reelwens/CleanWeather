@@ -20,7 +20,7 @@
                 <?php for($i=8; $i<=32; $i=$i+8 ) { ?>
                 <div class="col-md-3 text-center dayBox">
                     <p class="day"><?= (substr($forecast->list[$i]->dt_txt, 5, 5)) ?></p>
-                    <img src="img/weather_icon/<?= $forecast->list[$i]->weather[0]->icon ?>.svg" alt="Image">
+                    <img src="img/weather_icon/<?= (substr($forecast->list[$i]->weather[0]->icon, 0, -1)) ?>.svg" alt="Image">
                     <p class="temp"><?= $forecast->list[$i]->main->temp ?>°</p>
                 </div>
                 <?php } ?>
