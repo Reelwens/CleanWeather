@@ -22,6 +22,7 @@
                 <div class="col-md-3 text-center dayBox">
                     <p class="day"><?= (substr($forecast->list[$i]->dt_txt, 5, 5)) ?></p>
                     <img src="img/weather_icon/<?= (substr($forecast->list[$i]->weather[0]->icon, 0, -1)) ?>.svg" alt="Image">
+                    <p class="desc"><?= ucfirst($forecast->list[$i]->weather[0]->description) ?></p>
                     <p class="temp"><?= $forecast->list[$i]->main->temp ?>°</p>
                 </div>
                 <?php } ?>
