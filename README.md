@@ -27,12 +27,13 @@ Prenez connaissance de la météo partout dans le monde au sein d'une expérienc
 ## Fonctionnalités
 
 - Parallax animé des conditions météorologiques du lieu recherché (soleil, nuage, pluie)
-- Informations météorologiques détaillées du moment présent au lieu recherché
 - Localisation de l'utilisateur via son ip
 - Plusieurs fallback si la localisation précise n'est pas trouvée
+- Option de recherche d'une ville différente de sa localisation
+- Utilisation approfondie de d'OpenWeatherAPI (capacité de recherche approximative, unités adaptées, langue...)
+- Informations météorologiques détaillées du moment présent au lieu recherché
 - Sauvegarde de sa localisation dans un cookie temporaire
 - Stockage en cache des données de l'API météo
-- Option de recherche d'une ville différente de sa localisation
 - Affichage de la météo sur 4 jours sur une seconde page
 - Routing
 - Responsive
