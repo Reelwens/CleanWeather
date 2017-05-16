@@ -1,4 +1,4 @@
-# Clean Weather
+# Clean Weather - Application météo
 
 Prenez connaissance de la météo partout dans le monde au sein d'une expérience utilisateur agréable avec clean weather.
 
